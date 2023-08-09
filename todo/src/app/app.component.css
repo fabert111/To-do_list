@@ -1,0 +1,137 @@
+.container {
+  background-color: #3e284a; /* Color azul */
+  padding: 20px;
+  border-radius: 10px;
+  color: white; /* Texto en blanco para mayor contraste */
+  font-family: Arial, sans-serif;
+}
+
+.container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.container label, .container input, .container button {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+.container input {
+  padding: 8px;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.container button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #01050b; /* Color azul */
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.btn {
+  flex-basis: 32%;
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #0f77e6; /* Color azul */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn.active {
+  background-color: #444242; /* Color gris oscuro */
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+li.done {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.sm-text-input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #555;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 1.95em;
+  cursor: pointer;
+}
+
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.25em;
+  height: 1.25em;
+  border: 2px solid #ccc;
+  background: #fff;
+}
+
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: "\2713\0020";
+  position: absolute;
+  top: 0.15em;
+  left: 0.22em;
+  font-size: 1.3em;
+  line-height: 0.8;
+  color: #0d8dee;
+  transition: all 0.2s;
+  font-family: "Lucida Sans Unicode", "Arial Unicode MS", Arial;
+}
+
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+  border: 2px dotted blue;
+}

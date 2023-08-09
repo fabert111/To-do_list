@@ -1,0 +1,32 @@
+<div class="container">
+  <h1>To Do list</h1>
+  
+  <label for="addItemInput">Que tenemos que hacer hoy</label>
+  <input #NewItem
+        placeholder="Agregar un pendiente"
+        (keyup.enter)="addItem(NewItem.value); NewItem.value= ''"
+        class="Lg-ytext-input"
+        id="addItemInput">
+  <button class="btn-primary" (click)="addItem(NewItem.value)">Agregar</button>
+
+  <!-- Botones para filtrar tareas -->
+  <div class="btn-wrapper">
+    <button class="btn btn-menu" [class.active]="filter === 'all'" (click)="filter = 'all'">All</button>
+    <button class="btn btn-menu" [class.active]="filter === 'active'" (click)="filter = 'active'">To Do</button>
+    <button class="btn btn-menu" [class.active]="filter === 'done'" (click)="filter = 'done'">Done</button>
+  </div>
+
+  <!-- Contador de tareas pendientes -->
+  <h2>
+    {{ items.length }}
+    <span *ngIf="items.length === 1; else elseBlock">item</span>
+    <ng-template #elseBlock>pendientes</ng-template>
+  </h2>
+
+  <!-- Lista de tareas -->
+  <ul>
+    <li *ngFor="let item of items">
+      <app-item (remove)="remove(item)" [item]="item"></app-item>
+    </li>
+  </ul>
+</div>
