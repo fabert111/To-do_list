@@ -135,3 +135,4 @@ li.done {
 [type="checkbox"]:not(:checked):focus + label:before {
   border: 2px dotted blue;
 }
+
