@@ -19,3 +19,4 @@ export class ItemComponent {
     this.item.description = description;
   }
 }
+
