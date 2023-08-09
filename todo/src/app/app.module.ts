@@ -9,7 +9,7 @@ import { ItemComponent } from './item/item.component';
     AppComponent,
     ItemComponent
   ],
-  imports: [
+  imports: [ 
     BrowserModule
   ],
   providers: [],
