@@ -13,7 +13,8 @@ Este proyecto es una aplicación de lista de tareas pendientes desarrollada util
 
 ## Capturas de Pantalla
 
-![Captura de pantalla 2023-08-09 122132](https://github.com/fabert111/To-do_list/assets/119818844/458e2192-c521-4eeb-a314-04f487ad6ede)
+![Captura de pantalla 2023-08-09 135427](https://github.com/fabert111/To-do_list/assets/119818844/ea78bf3b-d3c1-48a4-b165-a5fa5e204703)
+
 
 
 
